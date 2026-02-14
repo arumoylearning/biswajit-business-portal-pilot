@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.DS_Store
+*.local
+.env
+.env.local
+.env.*.local
+tmpclaude-2c93-cwd
+tmpclaude-4baf-cwd
+tmpclaude-6c2a-cwd
+tmpclaude-62f6-cwd
+tmpclaude-97f2-cwd
+tmpclaude-947e-cwd
+tmpclaude-2002-cwd
+tmpclaude-afbe-cwd
+tmpclaude-c27c-cwd
