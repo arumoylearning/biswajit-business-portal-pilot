@@ -5,10 +5,7 @@ export default function Footer() {
     <footer className="bg-dark text-white text-center py-4 mt-auto">
       <div className="container">
         <p className="mb-0">
-          &copy; {currentYear} Business Portal. All rights reserved.
-        </p>
-        <p className="mt-2 small">
-          Built with React, React Router, and Bootstrap
+          &copy; {currentYear} Royal Packaging. All rights reserved.
         </p>
       </div>
     </footer>

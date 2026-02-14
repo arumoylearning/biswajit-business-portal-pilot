@@ -1,11 +1,35 @@
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 export default function Navbar() {
+  useEffect(() => {
+    // Close mobile menu when a link is clicked
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    
+    const closeMenu = () => {
+      if (navbarCollapse.classList.contains('show')) {
+        navbarToggler.click();
+      }
+    };
+
+    const navLinks = document.querySelectorAll('.navbar-nav a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
+
+    return () => {
+      navLinks.forEach(link => {
+        link.removeEventListener('click', closeMenu);
+      });
+    };
+  }, []);
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <div className="container-fluid">
-        <Link className="navbar-brand fw-bold" to="/">
-          Business Portal
+        <Link className="navbar-brand fw-bold fs-5" to="/">
+          🏢 Royal Packaging
         </Link>
         <button
           className="navbar-toggler"
@@ -26,13 +50,23 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#features">
-                Features
+              <a className="nav-link" href="#highlights">
+                Highlights
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#about">
                 About
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#products">
+                Products & Services
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#why-us">
+                Why Us
               </a>
             </li>
             <li className="nav-item">
