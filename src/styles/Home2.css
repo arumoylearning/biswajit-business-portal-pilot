@@ -1,0 +1,49 @@
+.hero-section {
+  background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
+  min-height: 100vh;
+}
+
+.min-vh-100 {
+  min-height: 100vh;
+}
+
+.feature-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 2rem 1rem;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.service-item {
+  transition: all 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(13, 110, 253, 0.1) !important;
+}
+
+.process-card {
+  padding: 2rem;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 8px 20px rgba(13, 110, 253, 0.3);
+}
+
+.py-lg-7 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}

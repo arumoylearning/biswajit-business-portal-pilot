@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 
 export default function Navbar() {
@@ -28,9 +27,9 @@ export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <div className="container-fluid">
-        <Link className="navbar-brand fw-bold fs-5" to="/">
+        <a className="navbar-brand fw-bold fs-5" href="/">
           🏢 Royal Packaging
-        </Link>
+        </a>
         <button
           className="navbar-toggler"
           type="button"
@@ -45,28 +44,23 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <Link className="nav-link active" to="/">
-                Home
-              </Link>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#highlights">
-                Highlights
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#about">
-                About
+              <a className="nav-link" href="#features">
+                Features
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#products">
-                Products & Services
+                Products
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#why-us">
-                Why Us
+              <a className="nav-link" href="#services">
+                Services
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#process">
+                How to Order
               </a>
             </li>
             <li className="nav-item">
